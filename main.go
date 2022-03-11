@@ -10,9 +10,11 @@ import (
 	"regexp"
 )
 
+// Must means to panic if an error occurs
 var templates = template.Must(template.ParseFiles("edit.html", "view.html"))
 var validPath = regexp.MustCompile("^/(edit|save|view)/([a-zA-Z0-9]+)$")
 
+// Used to access files
 type Page struct {
 	Title string
 	Body  []byte
