@@ -3,4 +3,5 @@
 !*.go
 !*.mod
 !*.html
+!*.pdf
 !.gitignore
